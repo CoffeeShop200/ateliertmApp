@@ -4,6 +4,7 @@ import { useState } from 'react'
 import './App.css'
 import Acceuil from './components/acceuil/Acceuil'
 import Navbar from './components/Navbar';
+import favicon from './assets/favicon.webp'
 
 
 function App() {

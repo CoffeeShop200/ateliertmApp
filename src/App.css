@@ -301,10 +301,16 @@ img {
   gap: 16px;
 }
 
-.container{
+
+
+.card-group{
+  margin-top: 2%;
   display: flex;
-  flex-direction: row;
-  gap: 16px;
-  align-items: center;
+  gap: 24px;
   justify-content: center;
+}
+
+nav img{
+  max-width: 100px;
+  width: auto;
 }
