@@ -1,15 +1,14 @@
 import React from "react";
-import ProdductCard from "./ProdductCard";
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 import {Image, Button, Card} from 'react-bootstrap';
 
 
-import cafe from '../assets/cafe.webp'
-import intro from '../assets/intro.webp'
+import cafe from '../../assets/cafe.webp'
+import intro from '../../assets/intro.webp'
 
 
-function Acceuil(props) {
+function Intro(props) {
         var products = [
       { id: 1, name: "Café Arabica", price: 19.99, image: cafe },
       { id: 2, name: "Café Robusta", price: 14.99, image: cafe },
@@ -52,10 +51,6 @@ function Acceuil(props) {
               <Button variant="primary">Personnalier maintenant</Button>
               <Button variant="secondary">Comment ça marche ?</Button>
           </div>
-
-
-
-
       </div>
       <Image className="imageAcceuil" src={intro} alt="Café" />
           </div>
@@ -64,4 +59,4 @@ function Acceuil(props) {
   );
 }
 
-export default Acceuil;
+export default Intro;

@@ -2,7 +2,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 import { useState } from 'react'
 import './App.css'
-import Acceuil from './components/Acceuil'
+import Acceuil from './components/acceuil/Acceuil'
 import Navbar from './components/Navbar';
 
 
