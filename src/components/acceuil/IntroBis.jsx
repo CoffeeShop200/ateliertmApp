@@ -1,6 +1,6 @@
 
 import 'bootstrap/dist/css/bootstrap.min.css';
-import {Image, Card, CardGroup} from 'react-bootstrap';
+import {Card, CardGroup} from 'react-bootstrap';
 import { Palette,Award, Truck } from 'lucide-react';
 
 

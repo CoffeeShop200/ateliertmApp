@@ -1,8 +1,8 @@
 import React from "react";
 
 import 'bootstrap/dist/css/bootstrap.min.css';
-import {Image, Card} from 'react-bootstrap';
-import { Button } from "@material-tailwind/react";
+import {Image, Button, Card} from 'react-bootstrap';
+// import { Button } from "@material-tailwind/react";
 
 
 import cafe from '../../assets/cafe.webp'
