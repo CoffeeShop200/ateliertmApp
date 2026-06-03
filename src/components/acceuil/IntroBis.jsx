@@ -1,6 +1,7 @@
 
 import 'bootstrap/dist/css/bootstrap.min.css';
-import {Image, Button, Card, CardGroup} from 'react-bootstrap';
+import {Image, Card, CardGroup} from 'react-bootstrap';
+import { Palette,Award, Truck } from 'lucide-react';
 
 
 function IntroBis(){
@@ -8,54 +9,46 @@ function IntroBis(){
 
     <div className="container">
 
-        <div>
+        <div className="intro-text">
         <h1>Votre style,vos règles</h1>
         <p>Marelle, c'est l'atelier qui transforme vos petits objets du quotidien en souvenirs uniques. 
           Inspirée de la cour de récré et taillée pour aujourd'hui, 
           chaque pièce est imprimée à la demande, sans minimum de commande.</p>
         </div>
+        <div>
+
         <div className="card-group">
-               <Card className="bg-dark text-white">
-      <Card.Img src="holder.js/100px270" alt="Card image" />
-      <Card.ImgOverlay>
-        <Card.Title>Card title</Card.Title>
+      <Card>
+        <Card.Header>{<Palette color='#f66151' />}</Card.Header>
+        <Card.Title>100 % personnalisable</Card.Title>
         <Card.Text>
-          This is a wider card with supporting text below as a natural lead-in
-          to additional content. This content is a little bit longer.
+          Logo, texte, couleurs, photo… mettez votre signature partout, en quelques clics.
         </Card.Text>
-        <Card.Text>Last updated 3 mins ago</Card.Text>
-      </Card.ImgOverlay>
-    </Card>
-
-    
-
+      </Card>
         </div>
         <CardGroup>
       <Card>
         <Card.Body>
-          <Card.Title>Card title</Card.Title>
+            <Card.Header>{<Award color='#3584e4' />}</Card.Header>
+          <Card.Title>Qualité atelier</Card.Title>
           <Card.Text>
-            This is a wider card with supporting text below as a natural lead-in
-            to additional content. This content is a little bit longer.
+            Matières durables, impressions précises et finitions pensées pour durer dans le temps.
           </Card.Text>
         </Card.Body>
-        <Card.Footer>
-          <small className="text-muted">Last updated 3 mins ago</small>
-        </Card.Footer>
       </Card>
-      <Card>
+            <Card>
         <Card.Body>
-          <Card.Title>Card title</Card.Title>
+            <Card.Header>{<Truck color='#39db37' />}</Card.Header>
+          <Card.Title>Livraison rapide</Card.Title>
           <Card.Text>
-            This is a wider card with supporting text below as a natural lead-in
-            to additional content. This content is a little bit longer.
+            Préparé avec soin et expédié sous 48 h depuis notre atelier français.
           </Card.Text>
         </Card.Body>
-        <Card.Footer>
-          <small className="text-muted">Last updated 3 mins ago</small>
-        </Card.Footer>
       </Card>
-      </CardGroup>      
+
+      </CardGroup>
+              </div>
+      
     </div>
     )
 }

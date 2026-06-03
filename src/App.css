@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap');
+
+
 .counter {
   font-size: 16px;
   padding: 5px 10px;
@@ -189,7 +192,6 @@ img {
 }
 
 .card{
-  max-width: 50%;
   display: flex;
   flex-direction: column;
   gap: 16px;
@@ -313,4 +315,32 @@ img {
 nav img{
   max-width: 100px;
   width: auto;
+}
+
+.container{
+  display: flex;
+  gap: 32px;
+  align-items: center;
+  justify-content: center;
+}
+
+.intro-text{
+  width: 90%;
+  border: solid var(--border);
+  border-radius: 8px;
+  padding: 16px;
+}
+
+.intro-text h1{
+  font-family: Fredoka,Nunito,sans-serif;
+  margin-bottom: 16px;
+}
+h1{
+  font-family: Fredoka,Nunito,sans-serif;
+}
+
+div .card-group .card .card-header{
+  width: 100%;
+  display: flex;
+  justify-content: left;
 }
