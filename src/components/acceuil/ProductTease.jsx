@@ -1,49 +1,26 @@
 import React from "react";
+import cafe from '../../assets/cafe.webp'
 import { CardGroup, Card } from 'react-bootstrap';
+import chausettes from '../../assets/products/chaussettes.webp'
+import divers from '../../assets/products/divers.webp'
+import tshirt from '../../assets/products/tshirt.webp'
+
+import ProdductCard from "../ProdductCard";
 
 function ProductTease() {
+          var products = [
+      { id: 1, name: "chausettes", price: 19.99, image: chausettes },
+      { id: 2, name: "t-shirt", price: 24.99, image: tshirt },
+      { id: 3, name: "divers", price: 14.99, image: divers  },
+
+    ];
   return (
         <CardGroup>
-      <Card>
-        <Card.Img variant="top" src="holder.js/100px160" />
-        <Card.Body>
-          <Card.Title>Card title</Card.Title>
-          <Card.Text>
-            This is a wider card with supporting text below as a natural lead-in
-            to additional content. This content is a little bit longer.
-          </Card.Text>
-        </Card.Body>
-        <Card.Footer>
-          <small className="text-muted">Last updated 3 mins ago</small>
-        </Card.Footer>
-      </Card>
-      <Card>
-        <Card.Img variant="top" src="holder.js/100px160" />
-        <Card.Body>
-          <Card.Title>Card title</Card.Title>
-          <Card.Text>
-            This card has supporting text below as a natural lead-in to
-            additional content.
-          </Card.Text>
-        </Card.Body>
-        <Card.Footer>
-          <small className="text-muted">Last updated 3 mins ago</small>
-        </Card.Footer>
-      </Card>
-      <Card>
-        <Card.Img variant="top" src="holder.js/100px160" />
-        <Card.Body>
-          <Card.Title>Card title</Card.Title>
-          <Card.Text>
-            This is a wider card with supporting text below as a natural lead-in
-            to additional content. This card has even longer content than the
-            first to show that equal height action.
-          </Card.Text>
-        </Card.Body>
-        <Card.Footer>
-          <small className="text-muted">Last updated 3 mins ago</small>
-        </Card.Footer>
-      </Card>
+          {products.map((product) => (
+        <ProdductCard key={product.id} name={product.name} price={product.price} image={product.image} />
+      ))}
+
+      
     </CardGroup>
   );
 }

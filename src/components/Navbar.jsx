@@ -1,5 +1,5 @@
 import logo from '../assets/logo.webp'
-import Image from 'react-bootstrap/Image';
+import {Image, Form, Button} from 'react-bootstrap';
 
 
 function Navbar() {
@@ -11,6 +11,16 @@ function Navbar() {
         <a href="/products">Products</a>
         <a href="/contact">Contact</a>
       </div>
+            <Form className="d-flex">
+        <Form.Control
+          type="search"
+          placeholder="Search"
+          className="me-2"
+          aria-label="Search"
+        />
+          <Button variant="outline-light" id='search-navbar-btn'>Search</Button>
+          </Form>
+
     </nav>
   );
 }

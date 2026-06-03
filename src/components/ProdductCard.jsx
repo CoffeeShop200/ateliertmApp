@@ -1,12 +1,15 @@
+import { Card, Button } from 'react-bootstrap';
 
 function ProdductCard(props) {
   return (
-    <div className="product-card">
-      <img src={props.image} alt={props.name} />
-      <h3>{props.name}</h3>
-      <p>${props.price.toFixed(2)}</p>
-      <button>Add to Cart</button>
-    </div>
+  <Card className="product-card" key={props.id} style={{ width: '18rem' }}>
+    <Card.Img variant="top" src={props.image} />
+    <Card.Body>
+      <Card.Title>{props.name}</Card.Title>
+      <Card.Text>${props.price.toFixed(2)}</Card.Text>
+      <Button >Add to Cart</Button>
+    </Card.Body>
+  </Card>
   );
 }
 

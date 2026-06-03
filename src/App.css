@@ -1,5 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap');
 
+body {
+  background-image: url('./assets/background4.svg');
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
 
 .counter {
   font-size: 16px;
@@ -237,6 +243,8 @@ img {
   border-bottom: 1px solid var(--border);
   box-shadow: var(--shadow);
 
+  
+
   .logo{
     height: 24px;
     width: auto;
@@ -266,6 +274,7 @@ img {
   max-width: 400px;
   height: auto;
   border-radius: 8px;
+  border: white 6px solid;
 }
 
 #introduction-child{
@@ -310,6 +319,7 @@ img {
   display: flex;
   gap: 24px;
   justify-content: center;
+  background-color: white;
 }
 
 nav img{
@@ -329,6 +339,7 @@ nav img{
   border: solid var(--border);
   border-radius: 8px;
   padding: 16px;
+  background-color: white;
 }
 
 .intro-text h1{
@@ -343,4 +354,24 @@ div .card-group .card .card-header{
   width: 100%;
   display: flex;
   justify-content: left;
+}
+
+.product-card img {
+  height: 15rem;
+  object-fit: cover;
+  width: 100%;
+}
+
+.btn-primary, .btn{
+  background-color: #FF6B6B !important;
+  border-color: #FFB56B !important;
+}
+
+.btn-primary:hover, .btn:hover {
+  background-color: #FF6BB5 !important;
+  border-color: #FF6B6B !important;
+}
+
+#search-vavbar-btn{
+  color: white !important;
 }
