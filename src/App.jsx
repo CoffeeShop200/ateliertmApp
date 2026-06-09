@@ -21,11 +21,11 @@ function App() {
   const [count, setCount] = useState(0)
 
     var products = [
-  { id: 1, name: "chausettes", price: 19.99, image: chausettes, description: "Des chaussettes confortables et stylées pour tous les jours." },
-  { id: 2, name: "t-shirt", price: 24.99, image: tshirt, description: "Un t-shirt confortable et stylé pour tous les jours." },
-  { id: 3, name: "divers", price: 14.99, image: divers, description: "Des articles divers et variés pour tous les besoins." },
-  { id: 4, name: "fouta", price: 29.99, image: divers, description: "Une fouta stylée et confortable pour tous les jours." },
-  { id: 5, name: "gourde", price: 34.99, image: divers, description: "Une gourde réutilisable et stylée pour tous les besoins." },
+  { id: 1, name: "chausettes", price: 19.99, image: chausettes, description: "Des chaussettes confortables et stylées pour tous les jours.", rating:"3/5" },
+  { id: 2, name: "t-shirt", price: 24.99, image: tshirt, description: "Un t-shirt confortable et stylé pour tous les jours.", rating:"4/5" },
+  { id: 3, name: "divers", price: 14.99, image: divers, description: "Des articles divers et variés pour tous les besoins.", rating:"2/5" },
+  { id: 4, name: "fouta", price: 29.99, image: divers, description: "Une fouta stylée et confortable pour tous les jours.", rating:"4/5" },
+  { id: 5, name: "gourde", price: 34.99, image: divers, description: "Une gourde réutilisable et stylée pour tous les besoins.", rating:"5/5" },
   ];
 
   return (
