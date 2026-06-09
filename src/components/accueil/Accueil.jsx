@@ -3,16 +3,17 @@ import Intro  from "./Intro";
 import IntroBis from "./IntroBis";
 import ProductTease from "./ProductTease";
 
-function Acceuil(props) {
+function Accueil(props) {
+
   return (
 
     <>
 
     <Intro/>
     <IntroBis/>
-    <ProductTease/>
+    <ProductTease props={props.products} />
     </>
   );
 }
 
-export default Acceuil;
+export default Accueil;
