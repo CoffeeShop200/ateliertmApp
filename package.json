@@ -14,6 +14,7 @@
     "@tailwindcss/postcss": "^4.3.0",
     "@tailwindcss/vite": "^4.3.0",
     "autoprefixer": "^10.5.0",
+    "axios": "^1.17.0",
     "bootstrap": "^5.3.8",
     "lucide-react": "^1.17.0",
     "react": "^18.2.0",
@@ -21,7 +22,6 @@
     "react-dom": "^18.2.0",
     "react-icons": "^5.6.0",
     "react-router-dom": "^6.14.1",
-    "react-share-social": "^0.1.59",
     "tailwindcss": "^4.3.0"
   },
   "devDependencies": {

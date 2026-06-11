@@ -543,17 +543,101 @@ div .card-group .card .card-header{
 }
 
 .carousel-container{
-
-  width: 50%;
+  border: solid var(--border);
+  width: 300%;
 }
 
 .makeStyles-copyContainer-5{
   display: none !important;
 }
-
+.makeStyles-copyContainer-13{
+  display: none !important;
+}
 
 .share-medias{
   display: flex;
   gap: 16px;
   margin-top: 16px;
+}
+
+.product-info{
+  text-align: left;
+}
+
+
+.payment-methods{
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  width: 81%;
+
+  background-color: #daf5dc;
+  border-radius: 15%;
+  border: solid;
+  border-width: thin;
+
+  margin-top: 5%;
+}
+
+.payment-methods p{
+  padding-right: 13%;
+  margin-top: 4% !important ;
+}
+.carousel-control-next{
+  display: none !important;
+}
+
+.carousel-control-prev{
+  display: none !important;
+}
+
+.product-page-container{
+  display: flex;
+  gap: 24px;
+  align-items: center;
+  justify-content: center;
+}
+.carousel-indicators button{
+  background-color: black !important;
+  height: 150% !important; 
+}
+
+@media screen and (max-width: 768px) {
+  .product-page-container {
+    flex-direction: column;
+    margin-top: 0% !important;
+  }
+
+  .carousel-container {
+    width: 100%;
+  }
+
+  .payment-methods {
+    width: 100%;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 16px;
+  }
+
+  .payment-methods p {
+    padding-right: 0;
+    margin-bottom: 8px !important;
+  }
+  
+}
+
+@media screen and (max-width: 480px) {
+  .product-info {
+    text-align: center;
+  }
+
+  .payment-methods {
+    align-items: center;
+  }
+}
+
+@media screen and (max-width: 1350px) {
+  .product-page-container {
+    margin-top: -25%;
+  }  
 }

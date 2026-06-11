@@ -8,7 +8,7 @@ function ProdductCard(props) {
 
   const navigate = useNavigate();
 
-  const{id, name, price, image,accueil, description} = props
+  const{id, name, priceTTC, image,accueil, description, rating, mainImage} = props
   const btnVoirPlus = accueil ? "" : <Button onClick={() => handleOpenModal()}>Voir plus</Button>
 
   const handleOpenModal = () => {
@@ -21,10 +21,11 @@ function ProdductCard(props) {
   return (
     <Link to={`/product/${id}`} style={{ textDecoration: 'none', color: 'inherit' }}>
   <Card className="product-card" key={id} style={{ width: '18rem' , cursor: 'pointer'}}>
-    <Card.Img variant="top" src={image} />
+    <Card.Img variant="top" src={mainImage} />
     <Card.Body>
       <Card.Title>{name}</Card.Title>
-      <Card.Text>${price.toFixed(2)}</Card.Text>
+      <Card.Text>${priceTTC.toFixed(2)}</Card.Text>
+      <Card.Text>note : {rating}</Card.Text>
       <div className='btn-group-productCard'>
           <Button >Ajouter au panier</Button>
       </div>

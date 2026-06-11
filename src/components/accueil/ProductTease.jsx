@@ -6,7 +6,6 @@ import divers from '../../assets/products/divers.webp'
 import tshirt from '../../assets/products/tshirt.webp'
 
 
-
 import ProdductCard from "../ProdductCard";
 
 function ProductTease(props) {
@@ -15,8 +14,9 @@ function ProductTease(props) {
   return (
 
     <CardGroup>
-      {products.filter((product) => product.id <= 3).map((product) => (
-        <ProdductCard key={product.id} name={product.name} price={product.price} image={product.image} accueil={true} />
+
+      {products.slice(0, 3).map((product,key) => (
+        <ProdductCard key={product["@id"]} name={product.name} priceTTC={product.priceTTC} mainImage={product.image[0].link} image={product.image[0].link} id={product["@id"]} description={product.description} accueil={false} rating={product.rating} />
       ))}
     </CardGroup>
   );

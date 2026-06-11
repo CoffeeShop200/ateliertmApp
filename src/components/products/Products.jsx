@@ -7,12 +7,15 @@ function Products(props) {
 
   const products = props.products
 
+  
+
   return (
     <>
     <FiltersSearching />
     <CardGroup className="products-container">
-      {products.map((product) => (
-        <ProdductCard key={product.id} name={product.name} price={product.price} image={product.image} id={product.id} description={product.description} accueil={false} rating={product.rating} />
+      {products.map((product, key) => (
+        console.log(products.id),
+        <ProdductCard key={product["@id"]} name={product.name} priceTTC={product.priceTTC} mainImage={product.image[0].link} image={product.image[0].link} id={product["@id"]} description={product.description} accueil={false} rating={product.rating} />
       ))}
     </CardGroup>
     </>
