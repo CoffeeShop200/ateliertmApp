@@ -3,7 +3,6 @@ import { useState } from "react";
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 import {Image, Button, Card, Collapse} from 'react-bootstrap';
-// import { Button } from "@material-tailwind/react";
 
 
 import cafe from '../../assets/cafe.webp'
