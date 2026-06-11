@@ -31,7 +31,7 @@ function App() {
     const fetchProducts = async () => {
       const options = {
         method: "GET",
-        url: "http://127.0.0.1:8000/api/products/",
+        url: "http://api-ateliertm.coffeeadmin-pro.fr/api/products",
       };
 
       try {
