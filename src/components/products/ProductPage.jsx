@@ -13,7 +13,7 @@ import maestro from '../../assets/logos/ms_hrz_pos.svg'
 
 function ProductPage(props) {
   const { id } = useParams();
-  const product = props.products.find((item) => item["@id"] === id);
+  const product = props.products.find(p => p.id === parseInt(id));
   const images = product ? product.image.map(img => img.link) : [];
 
   if (!product) {

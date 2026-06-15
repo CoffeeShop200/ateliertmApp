@@ -27,36 +27,32 @@ function App() {
   const [images, setImages] = useState([]);
   const [error, setError] = useState(null);
 
-  useEffect(() => {
-    const fetchProducts = async () => {
-      const options = {
-        method: "GET",
-        url: "https://api-ateliertm.coffeeadmin-pro.fr/api/products",
-      };
-
-      try {
-        const { data } = await axios.request(options);
-        setProducts(data.member);
-      } catch (error) {
-        setError(error);  
-      }
-    };
-
-    fetchProducts();
+      useEffect(() => {
+     axios
+      .get('https://api-ateliertm.coffeeadmin-pro.fr/api/products')
+      .then((response) => {
+        setProducts(response.data);
+      })
+      .catch((error) => {
+        console.error(error);
+      });
   }, []);
+
 
   if (error) return error.message;
 
  const mainImage = images.length > 0 ? images[0] : '';
 
- const idSlicer = (product) => {
-  const idString = product["@id"].replace("/api/products/", "");
-  return idString;
- }
+//  const idSlicer = (product) => {
+//   const idString = product["@id"].replace("/api/products/", "");
+//   return idString;
+//  }
 
- products.map((product) => {
-  product["@id"]= idSlicer(product);
- })
+//  products.map((product) => {
+//   product["id"]= idSlicer(product);
+//  })
+
+
 
   //   var products = [
   // { id: 1, name: "chausettes", price: 19.99, image: chausettes, description: "Des chaussettes confortables et stylées pour tous les jours.", rating:"3/5" },
@@ -68,6 +64,7 @@ function App() {
 
   return (
     <>
+
     <Navbar/>
 
       <Routes>

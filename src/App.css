@@ -7,6 +7,10 @@ body {
   background-repeat: no-repeat;
 }
 
+ .carousel-inner{
+    background-color: white!important;
+  }
+
 .counter {
   font-size: 16px;
   padding: 5px 10px;
@@ -366,6 +370,10 @@ div .card-group .card .card-header{
   width: 100%;
 }
 
+.product-card{
+  min-height: 100%;
+}
+
 .btn-primary, .btn{
   background-color: #FF6B6B !important;
   border-color: #FFB56B !important;
@@ -610,7 +618,12 @@ div .card-group .card .card-header{
 
   .carousel-container {
     width: 100%;
+    background-color: white;
   }
+
+ 
+
+
 
   .payment-methods {
     width: 100%;
@@ -640,4 +653,8 @@ div .card-group .card .card-header{
   .product-page-container {
     margin-top: -25%;
   }  
+}
+
+.card-title{
+  height: 80px;
 }
