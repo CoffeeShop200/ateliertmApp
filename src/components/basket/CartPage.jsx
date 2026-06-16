@@ -132,16 +132,6 @@ export default function CartPage() {
     <Container className="py-5" style={{ maxWidth: 960 }}>
       {/* ── Header ── */}
       <Row className="align-items-center mb-4">
-        <Col>
-          <h2 className="fw-bold mb-0">
-            Mon panier{" "}
-            {totalItems > 0 && (
-              <Badge bg="dark" pill style={{ fontSize: "0.7rem" }}>
-                {totalItems} article{totalItems > 1 ? "s" : ""}
-              </Badge>
-            )}
-          </h2>
-        </Col>
         {cart.length > 0 && (
           <Col xs="auto">
             <Button
